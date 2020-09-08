@@ -1,0 +1,203 @@
+
+
+html{
+	box-sizing: border-box;
+	font-size: 62.5%;/*Reset para REMS -- 62.5%=10px de 16px*/
+
+}
+
+*, *::before, *::after{
+	box-sizing:inherit;
+}
+
+body{
+
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+}
+
+
+
+/**Globales**/
+img{
+	max-width:100%; 
+}
+.contenedor{
+	max-width: 120rem; /*=1200px*/
+	margin: 0 auto;
+	 }
+
+h1{
+font-size: 3.8rem;
+}
+
+h2{
+font-size: 3.4rem;
+
+}
+
+h3{
+font-size: 3.0rem;
+
+}
+
+h4{
+font-size: 2.6rem;
+
+}
+
+
+
+/*Utilidades*/
+
+.secction{
+margin-top: 2em;
+margin-bottom: 2rem;
+}
+
+.fw-300{
+		font-weight: 300;
+}
+
+.centra-texto{
+	text-align: center;
+}
+
+.d-block{
+	display: block!important;
+}
+
+.contenido-centrado{
+	max-width: 800px;
+}
+
+
+/*header*/
+.site-header{
+	background-color: #333333;
+	padding: 1rem,0,3rem,0;
+}
+.site-header.inicio{
+	background-image: url(../img/HeaderTecno.png);
+	background-position: center; 
+	background-size: cover;
+	height: 100vh;
+	min-height: 60rem;
+}
+
+.contenido-header{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.contenido-header h1{
+	color: white;
+	padding-bottom: 2rem;
+	max-width: 60rem;
+	line-height: 1;
+}
+
+.barra{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 3rem;
+}
+
+
+
+/*Menu Navegacion*/
+
+#menu ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+}
+
+#menu #item{
+	float: left;
+}
+
+#menu #item a{
+		color: rgba(255,255,255,.5);
+		text-decoration: none;
+	font-size: 1.8rem;/*= a 18px*/
+	margin-right: 1rem;
+	font-family: 'Time new Roman', Times, serif;
+
+}
+
+#menu #desple{
+	display: none;
+}
+
+#menu #item:hover #desple{
+	display: block;
+}
+
+#menu #item a:hover{
+	background: rgba(0,102,204,1);
+}
+
+
+
+/*Tabla*/
+.contenedor-tabla{
+	width: 90%;
+	background: white;
+	margin: 50px auto;
+
+	display: grid;
+	grid-template-columns: repeat(4, 1fr); 
+	grid-auto-rows:50px;
+}
+
+.titulo-tabla{
+	display: grid;
+	grid-column-start:1;
+	grid-column-end:5;
+
+	background: rgba(40, 65, 120, 1);
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	font-size: 1.9rem;
+}
+
+.tabla-header, .tabla-item{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.tabla-header{
+		font-weight: bold;
+		font-size: 1.5rem;
+
+}
+
+.tabla-item{
+	padding: 10px;
+	font-size: 1.2rem;
+}
+
+/*Pie pagina*/
+.site-footer{
+	background-color: #333333;
+	margin: 0;
+}
+
+.contenedor-footer{
+	padding: 3rem;
+	display: flex;
+	justify-content: space-between;
+}
+.copyright{
+	margin:0;
+	color: white;
+}
